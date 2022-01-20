@@ -19,8 +19,8 @@ In this essence follow the below steps:
     * pip install matplotlib <br>
 
 * Now your environment is ready to use, open Anaconda tool, open your envrinment and select jupyter notebook, open the repo you cloned <br>
-<img src="images_readme/build_frcnn1.png" width="425"/> 
-<img src="images_readme/build_frcnn2.png" width="425"/>
+<img src="images_readme/build_frcnn1.png" width=100% height=100%/> 
+<img src="images_readme/build_frcnn2.png" width=100% height=100%/> 
 
 # Train your Custom Model
 
@@ -49,7 +49,7 @@ Also you will obtain your trained model (model_frcnn_vgg.hdf5), a record file fo
 
 * Similar to the training process, change your base path for your test dataset and their annotation file. The dataset will be sent to the model to make predictions and the annotation file is to calculate mAP. 
 
-<img src="images_readme/test1.png" width="425"/> 
+<img src="images_readme/test1.png" width=100% height=100%/> 
 
 * Also in test_results_path folder, you will obtain your test results with their bounding boxes.
 
