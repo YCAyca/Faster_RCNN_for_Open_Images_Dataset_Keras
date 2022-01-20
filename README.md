@@ -18,16 +18,18 @@ In this essence follow the below steps:
     * pip install pandas <br>
     * pip install matplotlib <br>
 
-* Now your environment is ready to use, open Anaconda tool, open your envrinment and select jupyter notebook, open the repo you cloned <img src="images_readme/build_frcnn1.png" width="425"/> <img src="images_readme/build_frcnn2.png" width="425"/>
+* Now your environment is ready to use, open Anaconda tool, open your envrinment and select jupyter notebook, open the repo you cloned <br>
+<img src="images_readme/build_frcnn1.png" width="425"/> 
+<img src="images_readme/build_frcnn2.png" width="425"/>
 
 # Train your Custom Model
 
 * Open <b> frcnn_train_vgg.pynb <\b>
 * Change base paths for your dataset <br>
-<img src="images_readme/train1.png" width="425"/> 
-* The annotation file should be 1 file having filename, xmin, xmax, ymin, ymax, class_name info for each pbject labeled in your dataset. 
-<img src="images_readme/train2.png" width="300"/> 
-* <b> If you have a classical type of Pascal/VOC annotation files where each image has its own .xml annotation file, you can use combine_annotations.py script in this repo to obtain the appropriate annotation file for training. Just collect all your annotation files in one folder and run the script with appropriate path </b>
+<img src="images_readme/train1.png" width="425"/> <br>
+* The annotation file should be 1 file having filename, xmin, xmax, ymin, ymax, class_name info for each pbject labeled in your dataset. <br>
+<img src="images_readme/train2.png" width="300"/> <br>
+* <b> If you have a classical type of Pascal/VOC annotation files where each image has its own .xml annotation file, you can use combine_annotations.py script in this repo to obtain the appropriate annotation file for training. Just collect all your annotation files in one folder and run the script with appropriate path </b> <br>
 <img src="images_readme/train3.png" width="425"/> 
 
 * Before start training, if you want to see the augmented images the new bounding boxes (highly recommended!), put global <b> visualize_data variable to True </b>, if not, leave it in default stage False.
@@ -51,6 +53,8 @@ Also you will obtain your trained model (model_frcnn_vgg.hdf5), a record file fo
 
 * Also in test_results_path folder, you will obtain your test results with their bounding boxes.
 
-<img src="images_readme/test2.png" width="425"/> 
+<img src="images_readme/test2.png" width="500"/> 
+
+<br>
 
 <img src="images_readme/road24.png" width="200"/> 
