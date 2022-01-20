@@ -12,8 +12,8 @@ In this essence follow the below steps:
 * clone this repo -> git clone https://github.com/YCAyca/Faster_RCNN_for_Open_Images_Dataset_Keras.git 
 * Create envrionment with the dependendices necessary for this repo <br> 
     * open anaconda terminal <br>
-    * cd path_to_requirement.txt_folder <br>
-    * conda env create -f environment.txt -n frcnn anaconda <br> 
+    * cd path_to_environment.yml_folder <br>
+    * conda env create -f environment.yml -n frcnn anaconda <br> 
     * activate frcnn <br>
     * pip install pandas <br>
     * pip install matplotlib <br>
@@ -52,7 +52,7 @@ Also you will obtain your trained model (model_frcnn_vgg.hdf5), a record file fo
 
 * Also in test_results_path folder, you will obtain your test results with their bounding boxes.
 
-<img src="images_readme/test2.png" width=100% height=100%/> 
+<img src="images_readme/test2.png" width="500"/> 
 
 <br>
 
