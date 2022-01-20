@@ -26,23 +26,22 @@ In this essence follow the below steps:
 
 * Open <b> frcnn_train_vgg.pynb <\b>
 * Change base paths for your dataset <br>
-<img src="images_readme/train1.png" width="425"/> <br>
+<img src="images_readme/train1.png" width=100% height=100%/>  <br>
 * The annotation file should be 1 file having filename, xmin, xmax, ymin, ymax, class_name info for each pbject labeled in your dataset. <br>
-<img src="images_readme/train2.png" width="300"/> <br>
+<img src="images_readme/train2.png" width=100% height=100%/>  <br>
 * <b> If you have a classical type of Pascal/VOC annotation files where each image has its own .xml annotation file, you can use combine_annotations.py script in this repo to obtain the appropriate annotation file for training. Just collect all your annotation files in one folder and run the script with appropriate path </b> <br>
-<img src="images_readme/train3.png" width="425"/> 
+<img src="images_readme/train3.png" width=100% height=100%/> 
 
 * Before start training, if you want to see the augmented images the new bounding boxes (highly recommended!), put global <b> visualize_data variable to True </b>, if not, leave it in default stage False.
 
-* If you want to obtain same augmentation every time, (I prefer this to see the real effect of the changes I did on parameters for different experiments), leave np.random.seed(0) line as default. If you want random - different augmentation on your dataset for every time you train the model from the beginning, comment out this line. <br> <img src="images_readme/np_seed.png" width="425"/> 
+* If you want to obtain same augmentation every time, (I prefer this to see the real effect of the changes I did on parameters for different experiments), leave np.random.seed(0) line as default. If you want random - different augmentation on your dataset for every time you train the model from the beginning, comment out this line. <br> <img src="images_readme/np_seed.png" width=100% height=100%/> 
 
 * Download pretrained weights for vgg (taken from source repo!) : https://drive.google.com/file/d/1FoKDz5N_PZUwcBu1DzjnD7t7c3w5v37p/view 
 
 You are ready to train now!
 At the end of the training, you will get the total amount of time passed, loss and accuracy diagrams for both classifier and region proposl network (rpn) as below
 
-<img src="images_readme/loss_accs.png" width="300"/> 
-
+<img src="images_readme/loss_accs.png" width=100% height=100%/> 
 Also you will obtain your trained model (model_frcnn_vgg.hdf5), a record file for the training process and a pickle file to be used in test. 
 
 # Test your Custom Model
@@ -53,7 +52,7 @@ Also you will obtain your trained model (model_frcnn_vgg.hdf5), a record file fo
 
 * Also in test_results_path folder, you will obtain your test results with their bounding boxes.
 
-<img src="images_readme/test2.png" width="500"/> 
+<img src="images_readme/test2.png" width=100% height=100%/> 
 
 <br>
 
