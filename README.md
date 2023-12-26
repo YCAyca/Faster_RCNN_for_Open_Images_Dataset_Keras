@@ -1,6 +1,6 @@
 # Faster R-CNN for Custom Object Detection
 
-The forked respository for Faster RCNN implementation. In this document, build instructions and usage of the repo will be explained.
+The forked repository for Faster RCNN implementation. In this document, build instructions and usage of the repo will be explained.
 
 # Build Instructions
 
@@ -10,7 +10,7 @@ In this essence follow the below steps:
 
 * Download Anaconda ->  https://www.anaconda.com/products/individual 
 * clone this repo -> git clone https://github.com/YCAyca/Faster_RCNN_for_Open_Images_Dataset_Keras.git 
-* Create envrionment with the dependendices necessary for this repo <br> 
+* Create environment with the dependencies necessary for this repo <br> 
     * open anaconda terminal <br>
     * cd path_to_environment.yml_folder <br>
     * conda env create -f environment.yml -n frcnn anaconda <br> 
@@ -18,7 +18,7 @@ In this essence follow the below steps:
     * pip install pandas <br>
     * pip install matplotlib <br>
 
-* Now your environment is ready to use, open Anaconda tool, open your envrinment and select jupyter notebook, open the repo you cloned <br>
+* Now your environment is ready to use, open Anaconda tool, open your environment and select jupyter notebook, open the repo you cloned <br>
 <img src="images_readme/build_frcnn1.png" width=100% height=100%/> 
 <img src="images_readme/build_frcnn2.png" width=100% height=100%/> 
 
@@ -34,12 +34,12 @@ In this essence follow the below steps:
 
 * Before start training, if you want to see the augmented images the new bounding boxes (highly recommended!), put global <b> visualize_data variable to True </b>, if not, leave it in default stage False.
 
-* If you want to obtain same augmentation every time, (I prefer this to see the real effect of the changes I did on parameters for different experiments), leave np.random.seed(0) line as default. If you want random - different augmentation on your dataset for every time you train the model from the beginning, comment out this line. <br> <img src="images_readme/np_seed.png" width=100% height=100%/> 
+* If you want to obtain the same augmentation every time, (I prefer this to see the real effect of the changes I did on parameters for different experiments), leave np.random.seed(0) line as default. If you want random - different augmentation on your dataset for every time you train the model from the beginning, comment out this line. <br> <img src="images_readme/np_seed.png" width=100% height=100%/> 
 
 * Download pretrained weights for vgg (taken from source repo!) : https://drive.google.com/file/d/1FoKDz5N_PZUwcBu1DzjnD7t7c3w5v37p/view 
 
 You are ready to train now!
-At the end of the training, you will get the total amount of time passed, loss and accuracy diagrams for both classifier and region proposl network (rpn) as below
+At the end of the training, you will get the total amount of time passed, loss and accuracy diagrams for both classifier and region proposal network (rpn) as below
 
 <img src="images_readme/loss_accs.png" width=100% height=100%/> 
 Also you will obtain your trained model (model_frcnn_vgg.hdf5), a record file for the training process and a pickle file to be used in test. 
